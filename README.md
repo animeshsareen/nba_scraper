@@ -5,7 +5,7 @@ Input a player's name and get years of their NBA stats as a pandas df.
 - This tool helps sports fans use data science to beat sportsbooks.
 - It extracts any active NBA player's game logs into a df (2019-now).
 - The tool also has en etl() function to clean this data for visualization via Plotly.
-## tools used
+## key libraris
 - `pandas`: For data manipulation and analysis.
 - `numpy`: For numerical operations.
 - `requests`: For sending HTTP requests to websites.
