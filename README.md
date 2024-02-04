@@ -5,7 +5,7 @@ Input a player's name and get years of their NBA stats as a pandas df.
 - This tool helps sports fans use data science to beat sportsbooks.
 - It extracts any active NBA player's game logs into a df (2019-now).
 - The tool also has en etl() function to clean this data for visualization via Plotly.
-## key libraris
+## key libraries
 - `pandas`: For data manipulation and analysis.
 - `numpy`: For numerical operations.
 - `requests`: For sending HTTP requests to websites.
@@ -13,9 +13,22 @@ Input a player's name and get years of their NBA stats as a pandas df.
 - `matplotlib`: For creating static, interactive, and animated visualizations.
 - `plotly`: For creating interactive and aesthetically pleasing visualizations.
 - `ipywidgets`: For creating interactive UI elements in Jupyter notebooks.
-## scraper
+## setup
+Open the Jupyter notebook and run 'setup.'
 ``` python
-curry = collect('stephen curry')
+# run all of this
+import os
+import pandas as pd
+import re
+# ...
+```
+## scraper usage
+``` python
+# get user input
+p = input("enter player name: ")
+
+# raw data into 'og' data frame
+og = collect(p)
 ```
 This creates a dataframe `curry` with Curry's original stats.
 
